@@ -250,6 +250,8 @@ input[type=range] {
 
 
 
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">if (document.location.href.toLowerCase().includes("/temp/") || document.location.href.toLowerCase().includes("/private/") || hasOwnProperty.call(window, "storyFormat")) {
 	// Change this to the path where the HTML file is
 	// located if you want to run this from inside Twine.
@@ -330,6 +332,8 @@ Macro.add('volume', {
 
 
 
+
+
 </script><tw-passagedata pid="1" name="start" tags="" position="300,300">&lt;&lt;masteraudio stop&gt;&gt;&lt;&lt;audio &quot;night_bgm&quot; volume 0.10 play loop&gt;&gt;
 La nuit est sombre et silencieuse. Pour une raison que vous ignorez, quelque chose vous empêche de dormir. Une petite voix, mystérieuse, enjoleuse, vous attire vers la porte de votre salle commune, dans les profondeurs du château endormi.
 
@@ -369,19 +373,26 @@ Certains semblent [[étrangement animés|tableaux]]
 		 Beaumont Marjoribanks
 	&lt;/a&gt;
 	&lt;a class=&quot;tableau portrait tabclick&quot; data-passage=&quot;Dioscoride&quot;&gt;
-		 &lt;img src=&quot;./images/diosco-story/dioscoride.jpg&quot; /&gt;
+		 &lt;img src=&quot;./images/dioscoride.gif&quot; /&gt;
 		 Dioscoride
 	&lt;/a&gt;
-	&lt;a class=&quot;tableau paysage tabclick&quot; data-passage=&quot;André&quot;&gt;
-		 &lt;img src=&quot;./images/andre1.jpg&quot; /&gt;
+	&lt;&lt;if $andreSuccess is false&gt;&gt;
+	&lt;a class=&quot;tableau portrait tabclick&quot; data-passage=&quot;André&quot;&gt;
+		 &lt;img src=&quot;./images/andre-story/andre_sad.jpg&quot; /&gt;
 		 André Dupont
 	&lt;/a&gt;
+	&lt;&lt;else&gt;&gt;
+	&lt;a class=&quot;tableau portrait tabclick&quot; data-passage=&quot;André&quot;&gt;
+		 &lt;img src=&quot;./images/andre-story/andre_happy.gif&quot; /&gt;
+		 André Dupont
+	&lt;/a&gt;
+	&lt;&lt;/if&gt;&gt;
 	&lt;a class=&quot;tableau portrait tabclick&quot; data-passage=&quot;Magnus&quot;&gt;
 		 &lt;img src=&quot;./images/magnus.webp&quot; /&gt;
 		 Magnus Jarvinen
 	&lt;/a&gt;
 	&lt;a class=&quot;tableau portrait tabclick&quot; data-passage=&quot;Jeremy&quot;&gt;
-		  &lt;img src=&quot;./images/jeremy.webp&quot; /&gt;
+		  &lt;img src=&quot;./images/jeremy.gif&quot; /&gt;
 		  Jérémy Garnet
 	&lt;/a&gt;
 	&lt;a class=&quot;tableau portrait tabclick&quot; data-passage=&quot;Quac&quot;&gt;
@@ -411,12 +422,12 @@ Certains semblent [[étrangement animés|tableaux]]
 &lt;a class=&quot;bouton&quot; data-passage=&quot;tableaux&quot;&gt;Revenir aux tableaux&lt;/a&gt;</tw-passagedata><tw-passagedata pid="7" name="André" tags="" position="1100,100">&lt;&lt;if $andreSuccess is false&gt;&gt;
 &lt;div class=&quot;container&quot;&gt;
 	&lt;div class=&quot;tableau paysage&quot;&gt;
-		  &lt;img src=&quot;./images/andre1.jpg&quot; /&gt;
+		  &lt;img src=&quot;./images/andre-story/andre_sad.jpg&quot; /&gt;
 		  André Dupont
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;comment&quot;&gt;André, jeune, semble être au premier plan, se démenant pour arroser ce qui semble être tout un champ de roses fanées. Les frénétiques efforts de tous les personnages sur ce tableau ne semblent avoir aucun effet sur leurs champs... Comme si ils n&#x27;avaient aucun talent.&lt;/div&gt;
+&lt;div class=&quot;comment&quot;&gt;Le tableau d&#x27;André est triste et sombre. Le personnage vous regarde avec une grimace de tristesse. Il est étrangement immobile. C&#x27;est un tableau magique, qui devrait être animé mais quelque chose ne va pas.&lt;/div&gt;
 &lt;a class=&quot;bouton centrer&quot; data-passage=&quot;andre-story&quot;&gt;Toucher le tableau&lt;/a&gt;
 &lt;div class=&quot;plaque&quot;&gt;André Dupont (1742-1817), sorcier français, est le premier collectionneur de Roses que l&#x27;on connaisse. A partir de 1785, il se prend de passion pour ce Beau genre, se démène, pour avoir un jardin où produire ses Roses et les observer, à Paris, principalement dans le quartier du palais du Luxembourg.
 
@@ -428,12 +439,12 @@ Coté sorcier, sa monographie &quot;La qualité des Roses&quot; est un précis d
 &lt;&lt;else&gt;&gt;
 &lt;div class=&quot;container&quot;&gt;
 	&lt;div class=&quot;tableau paysage&quot;&gt;
-		  &lt;img src=&quot;./images/andre2.jpg&quot; /&gt;
+		  &lt;img src=&quot;./images/andre-story/andre_happy.gif&quot; /&gt;
 		  &lt;span class=&quot;emphase&quot;&gt;André Dupont&lt;/span&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;comment&quot;&gt;&lt;span class=&quot;emphase&quot;&gt;Tableau réparé !&lt;/span&gt; André, jeune, est au premier plan, et sourit comme jamais, dans un tableau plein de couleurs. Les roses sont magnifiquement bien entretenues, tellement vivantes qu&#x27;elles semblent prête à être ceuillies à même la toile.&lt;/div&gt;
+&lt;div class=&quot;comment&quot;&gt;&lt;span class=&quot;emphase&quot;&gt;Tableau réparé !&lt;/span&gt; André vous regarde avec le sourire. Dans sa main, une rose qu&#x27;il a certainement évoqué de son sortilège signature. Le tableau a repris sa vie et lorsque vous passez à côté, vous êtes certain d&#x27;entendre un murmure : &quot;Merci !&quot;&lt;/div&gt;
 &lt;a class=&quot;bouton centrer&quot; data-passage=&quot;andre-story&quot;&gt;Toucher le tableau&lt;/a&gt;
 &lt;div class=&quot;plaque&quot;&gt;André Dupont (1742-1817), sorcier français, est le premier collectionneur de Roses que l&#x27;on connaisse. A partir de 1785, il se prend de passion pour ce Beau genre, se démène, pour avoir un jardin où produire ses Roses et les observer, à Paris, principalement dans le quartier du palais du Luxembourg.
 
@@ -812,7 +823,7 @@ Je regarde la statue de ma tendre amie, priant avec ce sourire si familier. Ais 
 
 [[(Sortir du tableau)|André]]
 &lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="25" name="StoryMenu" tags="" position="502,301">[[Retourner aux tableaux|tableaux]]</tw-passagedata><tw-passagedata pid="26" name="Beaumont" tags="" position="1100,500">&lt;div class=&quot;container&quot;&gt;
+</tw-passagedata><tw-passagedata pid="25" name="StoryMenu" tags="" position="425,300">[[Retourner aux tableaux|tableaux]]</tw-passagedata><tw-passagedata pid="26" name="Beaumont" tags="" position="1100,500">&lt;div class=&quot;container&quot;&gt;
 	&lt;div class=&quot;tableau portrait&quot;&gt;
 		  &lt;img src=&quot;./images/beaumont-story/beaumont.jpeg&quot; /&gt;
 		  Beaumont Marjoribanks
@@ -988,7 +999,7 @@ J&#x27;entendis dans certains journaux moldus, on me reconnut dans quelques reco
 
 [[Tout s&#x27;estompe alors que vous vous sentez tirer de nouveau dans la réalité|Beaumont]] ?</tw-passagedata><tw-passagedata pid="37" name="Dioscoride" tags="" position="1100,775">&lt;div class=&quot;container&quot;&gt;
 	&lt;div class=&quot;tableau portrait&quot;&gt;
-		 &lt;img src=&quot;./images/diosco-story/dioscoride.jpg&quot; /&gt;
+		 &lt;img src=&quot;./images/dioscoride.gif&quot; /&gt;
 		 Dioscoride
 	&lt;/div&gt;
 &lt;/div&gt;
@@ -1018,7 +1029,7 @@ Un petit éclat derrière vous, vous reconnaissez les murs de pierre du château
 Dioscoride se dirigea vers :
 -	[[L&#x27;Aloe Vera|diosco-africa-aloe]]
 -	[[Le laurier|diosco-africa-laurier]]
--	[[La plante aux inflorescences en forme d’ombrelles|diosco-africa-cobra]]
+-	[[La plante cobra|diosco-africa-cobra]]
 
 [[Continuer son chemin|diosco-story]]
 </tw-passagedata><tw-passagedata pid="40" name="diosco-gaule" tags="" position="1350,900">&lt;div class=&quot;container&quot;&gt;
@@ -1103,7 +1114,7 @@ Dioscorde cuisinait souvent avec la Livèche. Elle avait un goût particulier, p
 
 [[Retourner aux plantes de la serre|diosco-gaule]]</tw-passagedata><tw-passagedata pid="48" name="diosco-italia-feuille" tags="" position="1475,1025">&lt;div class=&quot;container&quot;&gt;
 	&lt;div class=&quot;detour paysage&quot;&gt;
-		  &lt;img src=&quot;./images/diosco-story/afrique.png&quot; /&gt;
+		  &lt;img src=&quot;./images/diosco-story/sauge.png&quot; /&gt;
 		  La Sauge
 	&lt;/div&gt;
 &lt;/div&gt;
@@ -1210,9 +1221,9 @@ Et c&#x27;est ainsi que &quot;Mystères subaquatiques de la botanique&quot; fut 
 	&lt;/div&gt;
 &lt;/div&gt;Quac fut très heureux de cette réussite et devint ambitieux en ce qui concerne sa potentielle futur carrière d&#x27;écrivain. Il décida alors d&#x27;écrire d&#x27;autres livres qu&#x27;il proposa, l&#x27;un à la suite de l&#x27;autre, au marché. Malencontreusement, aucun de ses nouveaux livres ne plus au publique. Ses échecs successifs plongèrent Quac Marinus dans une profonde dépression qui finit par le tuer le 24 octobre 1983, à l&#x27;âge de 31 ans.
 
-[[Quelle histoire !..|Quac]]</tw-passagedata><tw-passagedata pid="60" name="Jeremy" tags="" position="300,775">&lt;div class=&quot;container&quot;&gt;
+[[Quelle histoire !..|Quac]]</tw-passagedata><tw-passagedata pid="60" name="Jeremy" tags="" position="275,775">&lt;div class=&quot;container&quot;&gt;
 	&lt;div class=&quot;tableau portrait&quot;&gt;
-		  &lt;img src=&quot;./images/jeremy.webp&quot; /&gt;
+		  &lt;img src=&quot;./images/jeremy.gif&quot; /&gt;
 		  Jérémy Garnet
 	&lt;/div&gt;
 &lt;/div&gt;
@@ -1222,7 +1233,7 @@ Et c&#x27;est ainsi que &quot;Mystères subaquatiques de la botanique&quot; fut 
 [[Vous avez envie d&#x27;aventure...|jeremy-story]]
 
 &lt;a class=&quot;bouton&quot; data-passage=&quot;tableaux&quot;&gt;Revenir aux tableaux&lt;/a&gt;
-&lt;div class=&quot;copyright&quot;&gt;Offert par Léo Ginger et Jacob Tramontane&lt;/div&gt;</tw-passagedata><tw-passagedata pid="61" name="jeremy-story" tags="" position="425,775">Vous faites irruption dans le rayon des sorts de la bibliothèque. Vous le savez, Hermione l&#x27;a déjà dit avant vous, c&#x27;est le premier réflexe qu&#x27;il faut avoir quand on part à la recherche de quelqu&#x27;un. Mais c&#x27;est un partenaire très particulier que vous recherchez, puisqu&#x27;il appartient au passé. &quot;Jeremy Garnet&quot; pour trahir ce bout de papier que vous tenez dans vos mains indiquant celui que vous recherchez. Pour trahir aussi ce nom que vous cherchez d&#x27;un regard inquisiteur dans les coupures de presse sur les sortilèges. Vous en êtes si fort persuadé, que vous allez le trouver, qu&#x27;un bout de papier éclaire votre regard :
+&lt;div class=&quot;copyright&quot;&gt;Offert par Léo Ginger et Jacob Tramontane&lt;/div&gt;</tw-passagedata><tw-passagedata pid="61" name="jeremy-story" tags="" position="400,775">Vous faites irruption dans le rayon des sorts de la bibliothèque. Vous le savez, Hermione l&#x27;a déjà dit avant vous, c&#x27;est le premier réflexe qu&#x27;il faut avoir quand on part à la recherche de quelqu&#x27;un. Mais c&#x27;est un partenaire très particulier que vous recherchez, puisqu&#x27;il appartient au passé. &quot;Jeremy Garnet&quot; pour trahir ce bout de papier que vous tenez dans vos mains indiquant celui que vous recherchez. Pour trahir aussi ce nom que vous cherchez d&#x27;un regard inquisiteur dans les coupures de presse sur les sortilèges. Vous en êtes si fort persuadé, que vous allez le trouver, qu&#x27;un bout de papier éclaire votre regard :
 
 &lt;div class=&quot;plaque&quot;&gt;Jeremy G****** tente le croisement de plusieurs plantes à l&#x27;aide du sortilège. ******** Il en ressort avec une oreille calcinée ! Scandale au laboratoire Plantinmaleurre de Londres !&lt;/div&gt;
 
@@ -1231,7 +1242,7 @@ Des tâches, non pas d&#x27;encre mais d&#x27;une sève parsèment l&#x27;articl
 Vous continuez cependant à creuser, avec la patience d&#x27;un botaniste observant à la loupe les détails de la nérure d&#x27;une feuille minuscule la piste que vous venez de trouver : vous réalisez qu&#x27;il n&#x27;y a pas un mais des dizaines d&#x27;articles sur ce fait divers. Vous en êtes maintenant convaincu : le scandale a valu à GARNET d&#x27;être mentionné, connu. Vous vous dites que la postérité est aussi étrange que ces plantes cornues que des botanistes mettent des années à analyser. Et que si parfois certains restent dans l&#x27;ombre des années, d&#x27;autres apparaissent à la lumière - pour une oreille calcinée. 
 
 Vous esquissez un sourire franc : vous avez su démêler comment GARNET a été connu. Votre instinct est votre meilleur ami pour vous guider vers le [[lieu suivant|jeremy-potion]].
-</tw-passagedata><tw-passagedata pid="62" name="jeremy-potion" tags="" position="550,775">Bienvenue dans le rayon potions de la bibliothèque. Nous espérons que ces quelques mètres supplémentaires n&#x27;ont pas été la source d&#x27;un vertige incontrôlable. Vos doigts parcourent les livres aux couvertures brunes et vertes, parfois incrustées de feuilles séchées. Vous ignorez si GARNET a déjà été publié dans la collection des Braves, Beaux et Brillants Botanistes mais les couvertures d&#x27;un vert amande attirent votre oeil par leur sobriété. Pas de doute, être publié dans cette collection aurait constitué pour lui une reconnaissance, un apogée. Et vous êtes très déçus que certains livres manquent -les emprunter, dans une bibliothèque, quelle idée ?- pour ne pas pouvoir le vérifier.
+</tw-passagedata><tw-passagedata pid="62" name="jeremy-potion" tags="" position="525,775">Bienvenue dans le rayon potions de la bibliothèque. Nous espérons que ces quelques mètres supplémentaires n&#x27;ont pas été la source d&#x27;un vertige incontrôlable. Vos doigts parcourent les livres aux couvertures brunes et vertes, parfois incrustées de feuilles séchées. Vous ignorez si GARNET a déjà été publié dans la collection des Braves, Beaux et Brillants Botanistes mais les couvertures d&#x27;un vert amande attirent votre oeil par leur sobriété. Pas de doute, être publié dans cette collection aurait constitué pour lui une reconnaissance, un apogée. Et vous êtes très déçus que certains livres manquent -les emprunter, dans une bibliothèque, quelle idée ?- pour ne pas pouvoir le vérifier.
 
 Vous vous saisissez de l&#x27;encyclopédie des potions à base de champignons, enfin, et la consultez page après page. Car pour vous, à contre-courant de l&#x27;école STALINGTON ou des soeurs WAGGELBROWN, GARNET reste le spécialiste le plus éminent et le plus reconnu des questions fongiques. Vous n&#x27;êtes pas un bleu, vous ne vous laissez pas à dire &quot;des champignons&quot;, vous savez que le choix de votre vocabulaire compte beaucoup dans votre futur avenir en tant que botaniste.
 
@@ -1242,17 +1253,17 @@ C&#x27;est à ce moment que vous lisez la toute petite mention en italiques, ent
 Vous vous souvenez de cette citation moldue de NEWTON qui dit que chaque travail est un nain sur une épaule de géant. Et vous vous dites que NEWTON, s&#x27;il avait été sorcier aurait pu être botaniste dans une autre vie et théoriser la recherche en botanique.
 
 [[Vos pas vous amènent à briser l&#x27;interdit|jeremy-foret]]
-</tw-passagedata><tw-passagedata pid="63" name="jeremy-foret" tags="" position="675,775">Bien évidemment, vous n&#x27;êtes pas élève à abandonner - non, votre détermination ne connaît pas de limite, pas même quand il s&#x27;agit de pénétrer dans la forêt interdite. Vous claquez des dents. Vous êtes au plus près des conditions d&#x27;expérimentation de GARNET élève dans la forêt interdite gelant dans le froid de décembre. Les vocations qui exposent aux aléas du temps extérieur sont pleines d&#x27;aventures et de surprises.... Wouch ! Vous manquez cependant de crier devant la surprise qui vous attend.
+</tw-passagedata><tw-passagedata pid="63" name="jeremy-foret" tags="" position="650,775">Bien évidemment, vous n&#x27;êtes pas élève à abandonner - non, votre détermination ne connaît pas de limite, pas même quand il s&#x27;agit de pénétrer dans la forêt interdite. Vous claquez des dents. Vous êtes au plus près des conditions d&#x27;expérimentation de GARNET élève dans la forêt interdite gelant dans le froid de décembre. Les vocations qui exposent aux aléas du temps extérieur sont pleines d&#x27;aventures et de surprises.... Wouch ! Vous manquez cependant de crier devant la surprise qui vous attend.
 
 Rien moins qu&#x27;un des plots de votre course d&#x27;orientation de botanique à Poudlard de deuxième année que vous reconnaissez, ému. Cette course d&#x27;orientation a-t-elle inspirée Jeremy GARNET dans son choix d&#x27;orientation ? Devient-on botaniste au contact de la botanique ? Vous qui vous étiez dit que sa vocation avait toujours été quelque part en lui, vous vous posez des questions. D&#x27;autant qu&#x27;en y réfléchissant bien, c&#x27;est vrai que Poudlard propose beaucoup de cours de botanique, contrairement à d&#x27;autres, et que plus nombreux sont les élèves qui deviennent botanistes après leur scolarité à Poudlard que dans d&#x27;autres écoles où la matière a moins de place. Sans tort, vous croyez avoir une bonne idée en interrompant vos réflexions pour lancer une idée, dans le froid vide de la lisière de la forêt interdite : nommer l&#x27;allée proche de la forêt &quot;allée Jeremy GARNET&quot;.
 
 [[Et de l&#x27;humidité apaisante de la forêt, vous passez à la froideur de la pierre|jeremy-cachot]]
-</tw-passagedata><tw-passagedata pid="64" name="jeremy-cachot" tags="" position="800,775">Vous continuez à aller vers Jeremy GARNET, justement, direction la salle commune de Serpentard, dans laquelle Jeremy GARNET vous a précédé. Vous essayez de la regarder d&#x27;un oeil nouveau, de celui d&#x27;un élève qui n&#x27;y a jamais posé les pieds : quelle humidité notoire... vous vous demandez si c&#x27;est dans cette salle sombre, avec la vue sur les plantes sous-marines à travers les vitres, que Jeremy Garnet a eu l&#x27;idée de devenir botaniste. Peut-être la proximité avec la salle de potions lui a donné l&#x27;envie des expériences de plantes et de champignons ? Tout en parcourant une dernière fois le lieu, vous vous demandez quel est le poids de l&#x27;héritage familial dans la vocation des botanistes : est-ce que parce que toute sa famille a été rattaché à la maison vert plante, il y a plus de chances d&#x27;être un jour botaniste ?
+</tw-passagedata><tw-passagedata pid="64" name="jeremy-cachot" tags="" position="775,775">Vous continuez à aller vers Jeremy GARNET, justement, direction la salle commune de Serpentard, dans laquelle Jeremy GARNET vous a précédé. Vous essayez de la regarder d&#x27;un oeil nouveau, de celui d&#x27;un élève qui n&#x27;y a jamais posé les pieds : quelle humidité notoire... vous vous demandez si c&#x27;est dans cette salle sombre, avec la vue sur les plantes sous-marines à travers les vitres, que Jeremy Garnet a eu l&#x27;idée de devenir botaniste. Peut-être la proximité avec la salle de potions lui a donné l&#x27;envie des expériences de plantes et de champignons ? Tout en parcourant une dernière fois le lieu, vous vous demandez quel est le poids de l&#x27;héritage familial dans la vocation des botanistes : est-ce que parce que toute sa famille a été rattaché à la maison vert plante, il y a plus de chances d&#x27;être un jour botaniste ?
 
 [[Vous décidez de partir à la recherche de la Directrice de Serpentard.|jeremy-cachot2]]
-</tw-passagedata><tw-passagedata pid="65" name="jeremy-cachot2" tags="" position="925,775">Est-ce par votre ruse de vert argent, vos propos hautement pertinents de Serdaigle, la bienveillance qui émane du Poufsouffle que vous êtes ou parce qu&#x27;elle sent que le lion n&#x27;est pas prêt à lâcher le morceau; toujours est-il que Miss Taylor vous autorise un coup d&#x27;oeil aux archives contenant les dossiers sur les anciens élèves de sa maison - uniquement dans le cadre de vos recherches scolaires, évidemment. On peut dire que le dossier est... épais. Parmi la pile de parchemins, vous distinguez un arbre généalogique, les détails de son bulletin scolaire et ce qui semble être une sorte de liste retraçant soigneusement les raisons des retenues auxquelles Jeremiah a de toute évidence eut droit. [[Que voulez-vous prendre sous la loupe|jeremy-cachot3]] ?
+</tw-passagedata><tw-passagedata pid="65" name="jeremy-cachot2" tags="" position="900,775">Est-ce par votre ruse de vert argent, vos propos hautement pertinents de Serdaigle, la bienveillance qui émane du Poufsouffle que vous êtes ou parce qu&#x27;elle sent que le lion n&#x27;est pas prêt à lâcher le morceau; toujours est-il que Miss Taylor vous autorise un coup d&#x27;oeil aux archives contenant les dossiers sur les anciens élèves de sa maison - uniquement dans le cadre de vos recherches scolaires, évidemment. On peut dire que le dossier est... épais. Parmi la pile de parchemins, vous distinguez un arbre généalogique, les détails de son bulletin scolaire et ce qui semble être une sorte de liste retraçant soigneusement les raisons des retenues auxquelles Jeremiah a de toute évidence eut droit. [[Que voulez-vous prendre sous la loupe|jeremy-cachot3]] ?
 
-</tw-passagedata><tw-passagedata pid="66" name="jeremy-cachot3" tags="" position="925,900">L&#x27;arbre généalogique n&#x27;est finalement pas aussi extraordinaire que vous ne l&#x27;aviez peut-être espéré. Vous constatez que Jeremiah avait un frère Cracmol, mais mis à part une grand-mère au sourire chaleureux posant à l&#x27;ombre d&#x27;un grand arbre en fleurs. Malheureusement, l&#x27;image n&#x27;est pas assez grande pour que vous puissiez reconnaître l&#x27;espèce. D&#x27;ailleurs, la dame donne en réalité plutôt l&#x27;impression d&#x27;avoir uniquement profité de la belle coulisse fleurie qu&#x27;offre cet arbre pour sa photo, plutôt que de s&#x27;intéresser à la plante sous un regard de botaniste... pas très concluant.
+</tw-passagedata><tw-passagedata pid="66" name="jeremy-cachot3" tags="" position="900,900">L&#x27;arbre généalogique n&#x27;est finalement pas aussi extraordinaire que vous ne l&#x27;aviez peut-être espéré. Vous constatez que Jeremiah avait un frère Cracmol, mais mis à part une grand-mère au sourire chaleureux posant à l&#x27;ombre d&#x27;un grand arbre en fleurs. Malheureusement, l&#x27;image n&#x27;est pas assez grande pour que vous puissiez reconnaître l&#x27;espèce. D&#x27;ailleurs, la dame donne en réalité plutôt l&#x27;impression d&#x27;avoir uniquement profité de la belle coulisse fleurie qu&#x27;offre cet arbre pour sa photo, plutôt que de s&#x27;intéresser à la plante sous un regard de botaniste... pas très concluant.
 
 Rapidement, vous survolez les commentaires des professeurs quant aux performances scolaires de Jeremiah. Votre oeil expert, bien familier avec ce type de documents découvre rapidement que Jeremiah était en filière sciences. Contrebalançant un niveau déplorable en runes, les résultats de Jeremiah ont étaient bons en potions et excellents en botanique. Vous revient alors en mémoire l&#x27;information obtenue au rayon sortilèges et vous constatez qu&#x27;effectivement, la matière sortilège n&#x27;était pas en option chez notre botaniste... voilà qui expliquerait l&#x27;oreille calcinée ! Mais peut-être qu&#x27;après tout, être botaniste n&#x27;est pas uniquement être bon en botanique... Sur le coin inférieur d&#x27;un parchemin, vous lisez que GARNET comptait se présenter à l&#x27;examen écrit de la[i] Magifac presse[/i] ainsi que de l&#x27;ISM au débouché de sa scolarité à Poudlard, mais à partir de là, les traces se perdent...
 
