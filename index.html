@@ -252,6 +252,7 @@ input[type=range] {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">if (document.location.href.toLowerCase().includes("/temp/") || document.location.href.toLowerCase().includes("/private/") || hasOwnProperty.call(window, "storyFormat")) {
 	// Change this to the path where the HTML file is
 	// located if you want to run this from inside Twine.
@@ -325,6 +326,7 @@ Macro.add('volume', {
 
 /*! fr.js – Français, by: Marc Cornette, Pierre Kessler. | Copyright © 2017–2020 Thomas Michael Edwards <thomasmedwards@gmail.com>. All rights reserved. | Licensed under a BSD 2-clause "Simplified" License. */
 !function(){l10nStrings.identity="aventure",l10nStrings.aborting="Abandon",l10nStrings.cancel="Annuler",l10nStrings.close="Fermer",l10nStrings.ok="OK",l10nStrings.errorTitle="Erreur",l10nStrings.errorToggle="Afficher l'erreur",l10nStrings.errorNonexistentPassage='le passage "{passage}" n\'existe pas',l10nStrings.errorSaveMissingData="des éléments manquent dans cette sauvegarde. Soit ce fichier n'en est pas une, soit il est corrompu",l10nStrings.errorSaveIdMismatch="la sauvegarde ne semble pas provenir de cette {identity}",l10nStrings._warningIntroLacking="Soit il manque à votre navigateur, soit il n'autorise pas",l10nStrings._warningOutroDegraded=", de ce fait l'{identity} sera en mode dégradé. Cela n'empechera le fonctionnement, mais vous risquez de rencontrer des erreurs.",l10nStrings.warningNoWebStorage="{_warningIntroLacking} l'API de stockage de données{_warningOutroDegraded}",l10nStrings.warningDegraded="{_warningIntroLacking} certaines des fonctionnalités requises par l'{identity}{_warningOutroDegraded}",l10nStrings.debugBarToggle="Afficher la barre de débogage",l10nStrings.debugBarNoWatches="— pas de surveillance active —",l10nStrings.debugBarAddWatch="Ajouter une surveillance",l10nStrings.debugBarDeleteWatch="Annuler une surveillance",l10nStrings.debugBarWatchAll="Surveiller tout",l10nStrings.debugBarWatchNone="Ne rien surveiller",l10nStrings.debugBarLabelAdd="Ajouter",l10nStrings.debugBarLabelWatch="Surveillance",l10nStrings.debugBarLabelTurn="Tournant",l10nStrings.debugBarLabelViews="Vues",l10nStrings.debugBarViewsToggle="Basculer en mode débogage",l10nStrings.debugBarWatchToggle="Afficher la barre de surveillance",l10nStrings.uiBarToggle="Afficher/cacher la barre d'interface",l10nStrings.uiBarBackward="Revenir en arrière dans l'histoire de l'{identity}",l10nStrings.uiBarForward="Avancer en arrière dans l'histoire de l'{identity}",l10nStrings.uiBarJumpto="Aller à un point précis de l'histoire de l'{identity}",l10nStrings.jumptoTitle="Aller à",l10nStrings.jumptoTurn="Tournant",l10nStrings.jumptoUnavailable="Aucun point d'arriver n'est disponible…",l10nStrings.savesTitle="Sauvegardes",l10nStrings.savesDisallowed="Les sauvegardes sont désactivées pour ce passage.",l10nStrings.savesIncapable="{_warningIntroLacking} soit il n'a pas la capacité pour prendre en charge les sauvegardes : elles seront désactivées pour cette session.",l10nStrings.savesLabelAuto="Sauvegarde Auto",l10nStrings.savesLabelDelete="Effacer",l10nStrings.savesLabelExport="Enregistrer sur le disque…",l10nStrings.savesLabelImport="Charger depuis le disque…",l10nStrings.savesLabelLoad="Charger",l10nStrings.savesLabelClear="Effacer tout",l10nStrings.savesLabelSave="Enregistrer",l10nStrings.savesLabelSlot="Emplacement",l10nStrings.savesUnavailable="Aucun emplacement de sauvegarde n'a été trouvé…",l10nStrings.savesUnknownDate="inconnu",l10nStrings.settingsTitle="Préférences",l10nStrings.settingsOff="Off",l10nStrings.settingsOn="On",l10nStrings.settingsReset="Réinitialiser",l10nStrings.restartTitle="Recommencer",l10nStrings.restartPrompt="Êtes vous sûr(e) de vouloir recommencer ? Tous progrès non sauvegardés seront perdus.",l10nStrings.shareTitle="Partager",l10nStrings.autoloadTitle="Chargement Auto",l10nStrings.autoloadCancel="Aller au début",l10nStrings.autoloadOk="Chargement d'une sauvegarde automatique",l10nStrings.autoloadPrompt="Une sauvegarde automatique est disponible. La charger ou recommencer ?",l10nStrings.macroBackText="En arrière",l10nStrings.macroReturnText="Retour"}();
+
 
 
 
@@ -455,8 +457,7 @@ Côté moldu, il devient ainsi un très bon connaisseur des Roses de son époque
 Côté sorcier, sa monographie &quot;La qualité des Roses&quot; est un précis de botanique sorcière prisé des connaisseurs. Se trouvent à l&#x27;intérieur d&#x27;impressionnantes descriptions sur les méthodes d&#x27;hybridation des roses utilisées de nos jours dans les philtres d&#x27;amour et des sorts fort utiles pour aider à la propagation des massifs de fleurs, notamment le charme du Jardinier (et sa version spécifique aux rosiers) &lt;span class=&quot;emphase&quot;&gt;ainsi que son chef d&#x27;oeuvre : Le charme du Bouquet&lt;/span&gt;.&lt;/div&gt;
 &lt;&lt;/if&gt;&gt;
 
-&lt;a class=&quot;bouton&quot; data-passage=&quot;tableaux&quot;&gt;Revenir aux tableaux&lt;/a&gt;
-&lt;div class=&quot;copyright&quot;&gt;Offert par Damian Temple&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="andre-story" tags="" position="1225,100">&lt;&lt;masteraudio stop&gt;&gt;&lt;&lt;audio &quot;andre_bgm&quot; volume 0.20 play loop&gt;&gt;
+&lt;a class=&quot;bouton&quot; data-passage=&quot;tableaux&quot;&gt;Revenir aux tableaux&lt;/a&gt;</tw-passagedata><tw-passagedata pid="8" name="andre-story" tags="" position="1225,100">&lt;&lt;masteraudio stop&gt;&gt;&lt;&lt;audio &quot;andre_bgm&quot; volume 0.20 play loop&gt;&gt;
 &lt;&lt;set $andrePlanning to false&gt;&gt;
 &lt;&lt;set $andreVisit1 to false&gt;&gt;
 &lt;&lt;set $andreVisit2 to false&gt;&gt;
@@ -837,8 +838,7 @@ Il décide ensuite après 3 ans d’études de se lancer dans la construction d�
 
 [[Ce tableau a une histoire à raconter...|Beaumont-story]]
 
-&lt;a class=&quot;bouton&quot; data-passage=&quot;tableaux&quot;&gt;Revenir aux tableaux&lt;/a&gt;
-&lt;div class=&quot;copyright&quot;&gt;Offert par Théo Williams&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="Beaumont-story" tags="" position="1225,500">&lt;div class=&quot;container&quot;&gt;
+&lt;a class=&quot;bouton&quot; data-passage=&quot;tableaux&quot;&gt;Revenir aux tableaux&lt;/a&gt;</tw-passagedata><tw-passagedata pid="27" name="Beaumont-story" tags="" position="1225,500">&lt;div class=&quot;container&quot;&gt;
 	&lt;div class=&quot;tableau portrait&quot;&gt;
 		  &lt;img src=&quot;./images/beaumont-story/beaumont.jpeg&quot; /&gt;
 		  Beaumont Marjoribanks
@@ -1007,8 +1007,7 @@ J&#x27;entendis dans certains journaux moldus, on me reconnut dans quelques reco
 
 [[Ce tableau a une histoire à raconter|diosco-story]]
 
-&lt;a class=&quot;bouton&quot; data-passage=&quot;tableaux&quot;&gt;Revenir aux tableaux&lt;/a&gt;
-&lt;div class=&quot;copyright&quot;&gt;Offert par Britanny Huggins &amp; Phoebe Everhart&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="diosco-story" tags="" position="1225,775">&lt;div class=&quot;container&quot;&gt;
+&lt;a class=&quot;bouton&quot; data-passage=&quot;tableaux&quot;&gt;Revenir aux tableaux&lt;/a&gt;</tw-passagedata><tw-passagedata pid="38" name="diosco-story" tags="" position="1225,775">&lt;div class=&quot;container&quot;&gt;
 	&lt;div class=&quot;tableau portrait&quot;&gt;
 		 &lt;img src=&quot;./images/diosco-story/dioscoride.jpg&quot; /&gt;
 		 Dioscoride
@@ -1149,8 +1148,7 @@ Il se saisit d’un pot t prépara la nouvelle terre. Une des mandragores néces
 
 [[Vous vous rappelez...|magnus-story]]
 
-&lt;a class=&quot;bouton&quot; data-passage=&quot;tableaux&quot;&gt;Revenir aux tableaux&lt;/a&gt;
-&lt;div class=&quot;copyright&quot;&gt;Offert par Léo Ginger et Jacob Tramontane&lt;/div&gt;</tw-passagedata><tw-passagedata pid="52" name="magnus-story" tags="" position="1225,1175">L&#x27;autre jour, une rumeur est parvenue à vos oreilles: il y aurait un passage secret menant du quatrième étage... directement vers les serres de botanique 
+&lt;a class=&quot;bouton&quot; data-passage=&quot;tableaux&quot;&gt;Revenir aux tableaux&lt;/a&gt;</tw-passagedata><tw-passagedata pid="52" name="magnus-story" tags="" position="1225,1175">L&#x27;autre jour, une rumeur est parvenue à vos oreilles: il y aurait un passage secret menant du quatrième étage... directement vers les serres de botanique 
 
 A alors germé dans votre esprit avant de fermement s&#x27;y enraciner l&#x27;idée de partir à l&#x27;aventure pour le trouver, ce fameux passage!  Vous avez eu la bonne idée de faire remarquer au Chevalier du Catogan sa grande bravoure et flatté, celui-ci vous a livré sans trop de difficulté un nom... Magnus Jarvinen.  
 
@@ -1184,8 +1182,7 @@ EC -  Hum, est-ce qu&#x27;il n&#x27;existerait pas des agences, des vraies, pour
 
 [[Entrer dans le tableau|quac-story]]
 
-&lt;a class=&quot;bouton&quot; data-passage=&quot;tableaux&quot;&gt;Revenir aux tableaux&lt;/a&gt;
-&lt;div class=&quot;copyright&quot;&gt;Offert par Infini Parker et Linda Layton&lt;/div&gt;</tw-passagedata><tw-passagedata pid="55" name="quac-story" tags="" position="1225,1325">&lt;div class=&quot;container&quot;&gt;
+&lt;a class=&quot;bouton&quot; data-passage=&quot;tableaux&quot;&gt;Revenir aux tableaux&lt;/a&gt;</tw-passagedata><tw-passagedata pid="55" name="quac-story" tags="" position="1225,1325">&lt;div class=&quot;container&quot;&gt;
 	&lt;div class=&quot;tableau paysage&quot;&gt;
 		 &lt;img src=&quot;./images/quac-story/maison.jpg&quot; /&gt;
 	&lt;/div&gt;
@@ -1232,8 +1229,7 @@ Et c&#x27;est ainsi que &quot;Mystères subaquatiques de la botanique&quot; fut 
 
 [[Vous avez envie d&#x27;aventure...|jeremy-story]]
 
-&lt;a class=&quot;bouton&quot; data-passage=&quot;tableaux&quot;&gt;Revenir aux tableaux&lt;/a&gt;
-&lt;div class=&quot;copyright&quot;&gt;Offert par Léo Ginger et Jacob Tramontane&lt;/div&gt;</tw-passagedata><tw-passagedata pid="61" name="jeremy-story" tags="" position="400,775">Vous faites irruption dans le rayon des sorts de la bibliothèque. Vous le savez, Hermione l&#x27;a déjà dit avant vous, c&#x27;est le premier réflexe qu&#x27;il faut avoir quand on part à la recherche de quelqu&#x27;un. Mais c&#x27;est un partenaire très particulier que vous recherchez, puisqu&#x27;il appartient au passé. &quot;Jeremy Garnet&quot; pour trahir ce bout de papier que vous tenez dans vos mains indiquant celui que vous recherchez. Pour trahir aussi ce nom que vous cherchez d&#x27;un regard inquisiteur dans les coupures de presse sur les sortilèges. Vous en êtes si fort persuadé, que vous allez le trouver, qu&#x27;un bout de papier éclaire votre regard :
+&lt;a class=&quot;bouton&quot; data-passage=&quot;tableaux&quot;&gt;Revenir aux tableaux&lt;/a&gt;</tw-passagedata><tw-passagedata pid="61" name="jeremy-story" tags="" position="400,775">Vous faites irruption dans le rayon des sorts de la bibliothèque. Vous le savez, Hermione l&#x27;a déjà dit avant vous, c&#x27;est le premier réflexe qu&#x27;il faut avoir quand on part à la recherche de quelqu&#x27;un. Mais c&#x27;est un partenaire très particulier que vous recherchez, puisqu&#x27;il appartient au passé. &quot;Jeremy Garnet&quot; pour trahir ce bout de papier que vous tenez dans vos mains indiquant celui que vous recherchez. Pour trahir aussi ce nom que vous cherchez d&#x27;un regard inquisiteur dans les coupures de presse sur les sortilèges. Vous en êtes si fort persuadé, que vous allez le trouver, qu&#x27;un bout de papier éclaire votre regard :
 
 &lt;div class=&quot;plaque&quot;&gt;Jeremy G****** tente le croisement de plusieurs plantes à l&#x27;aide du sortilège. ******** Il en ressort avec une oreille calcinée ! Scandale au laboratoire Plantinmaleurre de Londres !&lt;/div&gt;
 
